@@ -55,7 +55,7 @@ const cart = [
 
 //CODE HERE
 
-
+function calcFinalPrice (cartTotal, couponValue, tax)
 
 //////////////////PROBLEM 3////////////////////
 /*  

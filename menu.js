@@ -32,6 +32,14 @@
 
 //CODE HERE
 
+let pizza = {
+    name : 'Unbelievable',
+    price : 27.89,
+    category: 'entree',
+    popularity: 2,
+    rating: 9,
+    tags: ['vegan', 'glutenfree']
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,7 +51,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.rating)
 
 /*
     Second, log the second tag in your pizza's
@@ -54,6 +62,7 @@
 
 //CODE HERE
 
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -63,7 +72,8 @@
 */
 
 //CODE HERE
-
+let {price} = pizza 
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -73,8 +83,8 @@
 */
 
 //CODE HERE
-
-
+ let {category} = pizza
+ console.log(category)
 //////////////////PROBLEM 3////////////////////
 /* 
     Create an array with about 5 objects in it.
@@ -88,7 +98,43 @@
 */
 
 //CODE HERE
-
+let foodArr = [ {
+    name : 'Evangelist',
+    price : 40.95,
+    category: 'entree',
+    popularity: 1,
+    rating: 10,
+    tags: ['dairy-free', 'spicy', 'shareable']
+}, {
+    name : 'Little bit of Everything',
+    price : 20.89,
+    category: 'apetizer',
+    popularity: 3,
+    rating: 9.5,
+    tags: ['shareable']
+}, {
+    name : 'Oh Johnny',
+    price : 29.99,
+    category: 'entree',
+    popularity: 4,
+    rating: 9.7,
+    tags: ['meat', 'spicy']
+}, {
+    name : 'Freida',
+    price : 27.89,
+    category: 'entree',
+    popularity: 5,
+    rating: 9.6,
+    tags: ['meat', 'glutenfree']
+},{
+    name : 'AMORE',
+    price : 27.89,
+    category: 'appetizer',
+    popularity: 6,
+    rating: 9.1,
+    tags: ['vegan', 'glutenfree', 'sugar-free']
+}
+]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -105,7 +151,11 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+for(key in foodArr){
+callback = foodArr.tags('vegan')
+}
+const filteredFood = foodArr.filter(callback)
+console.log(filteredFood)
 
 
 
@@ -150,6 +200,10 @@
 
 //CODE HERE
 
+const filterByProperty = (property,number,type) => {
+
+    return filterByProperty
+}
 
 /*
     Invoke the `filterByProperty` function passing
@@ -159,3 +213,5 @@
 */
 
 //CODE HERE
+
+//filterByProperty()

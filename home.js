@@ -24,7 +24,8 @@
 //CODE HERE
 
 
-
+const greetUser = (username) => `Welcome back, ${username}`
+    
 
 
 //////////////////PROBLEM 2////////////////////
@@ -51,7 +52,13 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
-
+const canWeDeliver = (zipcode) => {
+        if (deliveryAreaZipCodes.includes(zipcode) === true) {
+            return (`Yoohoo! You're in the delivery zone.`)
+    } else {
+        return (`BooHoo, you are NOT in our delivery zone`)
+    }
+}
 
 /* 
     Problem 2 Continued
@@ -72,6 +79,16 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 // CODE HERE
 
+const canWeDeliverTwo = (zipcode2) => {
+ for (let i=0; i < deliveryAreaZipCodes.length;i++) {
+    if(deliveryAreaZipCodes[i] !== zipcode2 && deliveryAreaZipCodes[i++] !== zipcode2) {
+     return (`You'll have to come in, you are NOT in our delivery zone`)
+    } else {
+        return (`Yessss! You're in the delivery zone.`)
+ } 
+}
+}
+console.log(canWeDeliverTwo(85213))
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -108,7 +125,11 @@ const deals = [
 
 //CODE HERE
 
+//change "15" to "10%" using .replace method
 
+deals[0].title.replace('15', '10')
+
+console.log(deals)
 
 /*
     The restaurant is going to continue its
@@ -124,3 +145,7 @@ const deals = [
 */
 
 //CODE HERE
+
+// use .replace() to replace March with April
+//use .trim to remove whitespace
+
